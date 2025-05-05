@@ -21,7 +21,7 @@ const Disp = () => {
   },[f])
   let del = (hno) =>{
     axios.delete(`http://localhost:5000/del/${hno}`,{"headers":{"Authorization":obj.store.token}}).then((res)=>{
-      alert("Deletion Done")
+      alert("Deleted")
       setF(!f)
     })
   }
